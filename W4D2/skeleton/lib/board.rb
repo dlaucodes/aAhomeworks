@@ -4,13 +4,16 @@ class Board
   def initialize(name1, name2)
     @name1 = name1
     @name2 = name2
+    @cups = cups.length.empty?
   end
 
   def place_stones
+
     # helper method to #initialize every non-store cup with four stones each
   end
 
   def valid_move?(start_pos)
+    @board.cups[0] = []
   end
 
   def make_move(start_pos, current_player_name)
